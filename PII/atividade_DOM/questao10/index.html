@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Simples</title>
+    <style>
+        .calculadora { display: flex; flex-direction: column; width: 250px; gap: 10px; }
+        .calculadora div { display: flex; justify-content: space-between; align-items: center; }
+        .operacoes label { margin-right: 10px; }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Calculadora Simples</h2>
+        <div>
+            <label for="num1">Número 1:</label>
+            <input type="number" id="num1" value="0">
+        </div>
+        <div>
+            <label for="num2">Número 2:</label>
+            <input type="number" id="num2" value="0">
+        </div>
+        <div class="operacoes">
+            Operação:
+            <span>
+                <input type="radio" id="opSoma" name="operacao" value="soma" checked> <label for="opSoma">+</label>
+                <input type="radio" id="opSubtracao" name="operacao" value="subtracao"> <label for="opSubtracao">-</label>
+                <input type="radio" id="opMultiplicacao" name="operacao" value="multiplicacao"> <label for="opMultiplicacao">*</label>
+                <input type="radio" id="opDivisao" name="operacao" value="divisao"> <label for="opDivisao">/</label>
+            </span>
+        </div>
+        <button id="btnCalcular">Calcular</button>
+        <div>
+            <strong>Resultado:</strong>
+            <span id="resultadoCalc">0</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

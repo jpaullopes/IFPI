@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Parágrafos</title>
+</head>
+<body>
+    <div id="containerPrincipal">
+        <p>Esse é o primeiro parágrafo dentro da div.</p>
+        <p>Esse é o segundo parágrafo</p>
+        <span>Isso não é um parágrafo</span>
+        <div>
+            <p>Parágrafo aninhado, também será contado.</p>
+        </div>
+        <p>Último parágrafo aqui</p>
+    </div>
+
+    <p>Este parágrafo está fora da div e não será contado.</p>
+
+    <div id="resultado">
+        </div>
+
+    <button onclick="contarParagrafos()">Contar Parágrafos</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
