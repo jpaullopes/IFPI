@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5 - Seletor de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Seletor de Imagens</h1>
+        <p class="subtitle">Selecione uma imagem da lista para visualizar</p>
+        
+        <div class="seletor-section">
+            <label for="seletorImagens">Escolha uma imagem:</label>
+            <select id="seletorImagens">
+                <option value="">-- Selecione uma imagem --</option>
+                <option value="paisagem1">Paisagem Montanhosa</option>
+                <option value="paisagem2">Praia Tropical</option>
+                <option value="paisagem3">Floresta</option>
+            </select>
+        </div>
+        
+        <div id="resultado" class="resultado-container">
+            <p class="placeholder">Selecione uma imagem para visualizar</p>
+        </div>
+        
+        <div class="info-section">
+            <h3>Imagens Disponíveis:</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Paisagem Montanhosa</strong>
+                    <p>Bela vista de montanhas cobertas de neve</p>
+                </div>
+                <div class="info-item">
+                    <strong>Praia Tropical</strong>
+                    <p>Praia paradisíaca com águas cristalinas</p>
+                </div>
+                <div class="info-item">
+                    <strong>Floresta</strong>
+                    <p>Densa floresta verde com árvores centenárias</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

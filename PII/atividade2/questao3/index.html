@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questão 3 - Calculadora de Taxa de Engajamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Taxa de Engajamento</h1>
+    
+    <label for="numInteracoes">Número de Interações:</label>
+    <input type="number" id="numInteracoes" placeholder="Curtidas + Comentários + Compartilhamentos" min="0">
+    
+    <label for="numVisualizacoes">Número de Visualizações:</label>
+    <input type="number" id="numVisualizacoes" placeholder="Total de visualizações da postagem" min="1">
+    
+    <button id="calcularBtn">Calcular Taxa de Engajamento</button>
+    
+    <div id="resultado" class="resultado oculto">
+            <h3>Resultado:</h3>
+            <div class="taxa-resultado">
+                <span class="taxa-valor" id="taxaValor">0%</span>
+            </div>
+            <div class="interpretacao" id="interpretacao"></div>
+        </div>
+        
+        <div id="mensagemErro" class="oculto erro"></div>
+        
+        <div class="formula-info">
+            <h3>Fórmula:</h3>    </div>
+    
+    <div id="mensagemErro" class="oculto erro"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

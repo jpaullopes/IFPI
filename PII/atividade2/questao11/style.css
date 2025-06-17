@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+select {
+    width: 200px;
+    height: 150px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+#mensagemErro {
+    color: red;
+    display: none;
+}
+
+#mensagemSucesso {
+    color: green;
+    display: none;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questão 1 - Sistema de Mensagens de Erro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Sistema de Mensagens de Erro</h1>
+    
+    <button id="botaoErro" onclick="mostrarErro('Esta é uma mensagem de erro personalizada!')">
+        Mostrar Erro
+    </button>
+    
+    <div id="mensagemErro" class="oculto">
+        O campo deve ser preenchido
+    </div>
+    
+    <h2>Teste com diferentes mensagens:</h2>
+    <button onclick="exibirErro('mensagemErro', 'Campo obrigatório não preenchido!')">
+        Erro Campo Obrigatório
+    </button>
+    <button onclick="exibirErro('mensagemErro', 'Email inválido!')">
+        Erro Email
+    </button>
+    <button onclick="exibirErro('mensagemErro', 'Senha deve ter pelo menos 8 caracteres!')">
+        Erro Senha
+    </button>
+</body>
+</html>

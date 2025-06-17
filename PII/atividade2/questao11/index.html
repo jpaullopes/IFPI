@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11 - Movimentação de Ativos com Validações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Questão 11 - Movimentação de Ativos</h1>    
+    <table border="1">
+        <tr>
+            <th>Ativos Disponíveis</th>
+            <th>Ações</th>
+            <th>Carteira de Investimentos</th>
+        </tr>
+        <tr>
+            <td>
+                <select id="ativosDisponiveis" size="10" multiple>
+                    <option value="AAPL">Apple (AAPL)</option>
+                    <option value="GOOGL">Google (GOOGL)</option>
+                    <option value="AMZN">Amazon (AMZN)</option>
+                    <option value="MSFT">Microsoft (MSFT)</option>
+                    <option value="TSLA">Tesla (TSLA)</option>
+                    <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+                    <option value="FB">Meta (FB)</option>
+                    <option value="V">Visa (V)</option>
+                    <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                    <option value="WMT">Walmart (WMT)</option>
+                </select>
+            </td>
+            <td>
+                <button id="moverParaDireitaBtn">→</button>
+                <br><br>
+                <button id="moverParaEsquerdaBtn">←</button>
+            </td>
+            <td>
+                <select id="carteiraInvestimentos" size="10" multiple>
+                </select>
+            </td>
+        </tr>
+    </table>
+    
+    <div id="mensagemErro"></div>
+    <div id="mensagemSucesso"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

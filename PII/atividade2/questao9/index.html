@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 9 - Remoção de Hashtag</title>
+    <link rel="stylesheet" href="style_simples.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciamento de Hashtags</h1>
+        <p class="subtitle">Adicione e remova hashtags da sua lista</p>
+        
+        <div class="input-section">
+            <input type="text" id="hashtagInput" placeholder="Digite uma hashtag (ex: programacao)">
+            <button id="adicionarBtn">Adicionar Hashtag</button>
+        </div>
+        
+        <div class="hashtags-container">
+            <h3>Suas Hashtags Favoritas (<span id="contador">0</span>/5):</h3>
+            <select id="hashtagsList" size="6" multiple>
+                <!-- As hashtags serão adicionadas aqui dinamicamente -->
+            </select>
+            <div class="controles-select">
+                <p>Selecione uma ou mais hashtags e clique em "Remover"</p>
+                <button id="removerBtn" disabled>Remover Selecionadas</button>
+                <button id="limparBtn">Limpar Todas</button>
+            </div>
+        </div>
+        
+        <div id="mensagemErro" class="oculto erro"></div>
+        <div id="mensagemSucesso" class="oculto sucesso"></div>
+        
+        <div class="sugestoes-section">
+            <h3>Hashtags Populares:</h3>
+            <div class="sugestoes-grid">
+                <button class="sugestao-btn" data-hashtag="programacao">#programacao</button>
+                <button class="sugestao-btn" data-hashtag="javascript">#javascript</button>
+                <button class="sugestao-btn" data-hashtag="desenvolvimentoweb">#desenvolvimentoweb</button>
+                <button class="sugestao-btn" data-hashtag="frontend">#frontend</button>
+                <button class="sugestao-btn" data-hashtag="backend">#backend</button>
+                <button class="sugestao-btn" data-hashtag="tecnologia">#tecnologia</button>
+                <button class="sugestao-btn" data-hashtag="python">#python</button>
+                <button class="sugestao-btn" data-hashtag="react">#react</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

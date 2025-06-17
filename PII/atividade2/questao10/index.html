@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10 - Movimentação de Ativos Financeiros</title>
+    <link rel="stylesheet" href="style_simples.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mover Ativos Financeiros entre Carteiras</h1>
+        <p class="subtitle">Gerencie seus investimentos entre diferentes carteiras</p>
+        
+        <div class="carteiras-container">
+            <div class="carteira">
+                <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+                <select id="ativosDisponiveis" size="10" multiple>
+                    <option value="AAPL">Apple (AAPL)</option>
+                    <option value="GOOGL">Google (GOOGL)</option>
+                    <option value="AMZN">Amazon (AMZN)</option>
+                    <option value="MSFT">Microsoft (MSFT)</option>
+                    <option value="TSLA">Tesla (TSLA)</option>
+                    <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+                    <option value="FB">Meta (FB)</option>
+                    <option value="V">Visa (V)</option>
+                    <option value="JNJ">Johnson & Johnson (JNJ)</option>
+                    <option value="WMT">Walmart (WMT)</option>
+                </select>
+            </div>
+            
+            <div class="buttons">
+                <button id="moverParaDireitaBtn">➡️</button>
+                <button id="moverParaEsquerdaBtn">⬅️</button>
+            </div>
+            
+            <div class="carteira">
+                <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+                <select id="carteiraInvestimentos" size="10" multiple>
+                    <!-- Inicialmente vazia -->
+                </select>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>Instruções:</h3>
+            <ul>
+                <li>Selecione um ou mais ativos e clique nas setas para mover</li>
+                <li>Move os ativos selecionados para a Carteira de Investimentos</li>
+                <li>Move os ativos selecionados de volta para Ativos Disponíveis</li>
+                <li>Use Ctrl+clique para selecionar múltiplos ativos</li>
+            </ul>
+        </div>
+        
+        <div id="mensagemErro" class="oculto erro"></div>
+        <div id="mensagemSucesso" class="oculto sucesso"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
